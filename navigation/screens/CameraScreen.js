@@ -10,13 +10,12 @@ export default function CameraScreen({navigation}) {
     const [result, setResult] = useState('Nothing scanned yet');
     
     const scanHandler = ({type, data}) => {
-        setScanned(false)
-        setResult(data)
-        console.log(data)
+        setScanned(false);
+        setResult(data);
+        console.log(result)
         setTimeout(() => {
-            let trueBool = true
-            setScanned(trueBool)
-        }, 3000)
+            setScanned(true);
+        }, 3000);
     }
     
     useEffect(() => {
@@ -39,9 +38,12 @@ export default function CameraScreen({navigation}) {
                     style={styles.fixedRatio} 
                     type={type}
                     ratio={'1:1'}
-                    onBarCodeScanned={scanned && scanHandler}
+                    onBarCodeScanned={scanned && scanHandler} //scanned && scanHandler
                     /> }
             </View>
+            <Text>{result}</Text>
+            <Text>{String(scanned)}</Text>
+
         </View>
     );
 }
