@@ -8,7 +8,7 @@ export default function ContactsScreen({navigation}) {
                     fontSize: 26,
                     fontWeight: 'bold'
                 }}>
-                Contacts Screen
+                Contacts List
             </Text>
         </View>
     );
