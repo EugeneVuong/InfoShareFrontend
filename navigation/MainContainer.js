@@ -7,11 +7,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import ShareScreen from './screens/ShareScreen'
 import PInfoScreen from './screens/PInfoScreen'
 import ContactsScreen from './screens/ContactsScreen'
+import CameraScreen from './screens/CameraScreen'
 
 // Screen Names
 const shareName = 'Share';
 const pInfoName = 'Personal Info';
-const contactsName = 'Contacts'
+const contactsName = 'Contacts';
+const cameraName = 'Camera';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,6 +33,8 @@ export default function MainContainer(){
                         iconName = focused ? 'person' : 'person'
                     } else if (rn === contactsName) {
                         iconName = focused ? 'people' : 'people'
+                    } else if (rn === cameraName) {
+                        iconName = focused ? 'camera' : 'camera'
                     }
 
                     return <Ionicons name={iconName} size={size} color={color}/>
@@ -38,7 +42,7 @@ export default function MainContainer(){
             })}
             
             >
-
+            <Tab.Screen name={cameraName} component={CameraScreen}/>
             <Tab.Screen name={shareName} component={ShareScreen}/>
             <Tab.Screen name={contactsName} component={ContactsScreen}/>
             <Tab.Screen name={pInfoName} component={PInfoScreen}/>
