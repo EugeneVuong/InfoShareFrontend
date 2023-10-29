@@ -14,7 +14,8 @@ export default function CameraScreen({navigation}) {
         setResult(data)
         console.log(data)
         setTimeout(() => {
-            setScanned(true)
+            let trueBool = true
+            setScanned(trueBool)
         }, 3000)
     }
     
