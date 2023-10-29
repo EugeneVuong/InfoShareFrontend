@@ -11,7 +11,8 @@ export default function PInfoScreen({navigation}) {
             <Text 
                 style={{
                     fontSize: 26,
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    lineHeight: 60,
                 }}>
                 First Name
             </Text>
@@ -24,7 +25,8 @@ export default function PInfoScreen({navigation}) {
             <Text
                 style={{
                     fontSize: 26,
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    lineHeight: 55,
                 }}>
                 Last Name
             </Text>
@@ -37,7 +39,8 @@ export default function PInfoScreen({navigation}) {
             <Text
                 style={{
                     fontSize: 26,
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    lineHeight: 55,
                 }}>
                 Phone Number
             </Text>
@@ -50,7 +53,8 @@ export default function PInfoScreen({navigation}) {
             <Text
                 style={{
                     fontSize: 26,
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    lineHeight: 50,
                 }}>
                 Major
             </Text>
