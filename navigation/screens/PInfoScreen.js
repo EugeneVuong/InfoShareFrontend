@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity} from 'react-native';
-import { getTask } from './convex/myFunctions.js';
+import { getTask } from '../../convex/myFunctions';
 
 export default function PInfoScreen({navigation}) {
     const [text, firstName] = React.useState('');
@@ -8,18 +8,6 @@ export default function PInfoScreen({navigation}) {
     const [number, phoneNumber] = React.useState('');
     const [major, collegeMajor] = React.useState('');
 
-    // const saveData = async () => {
-    //     if (firstName && lastName && phoneNumber &&) {
-    //       try {
-    //         await getTask({ id: 'your-unique-id', firstName, lastName, phoneNumber, collegeMajor});
-    //         console.log('Data saved successfully');
-    //       } catch (error) {
-    //         console.error('Error saving data:', error);
-    //       }
-    //     } else {
-    //       console.log('Please fill in all fields');
-    //     }
-    //   };
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center '}}>
             <Text 
