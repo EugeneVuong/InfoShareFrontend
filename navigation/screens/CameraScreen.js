@@ -38,7 +38,7 @@ export default function CameraScreen({navigation}) {
                     style={styles.fixedRatio} 
                     type={type}
                     ratio={'1:1'}
-                    onBarCodeScanned={scanned && scanHandler} //scanned && scanHandler
+                    onBarCodeScanned={scanHandler} //scanned && scanHandler
                     /> }
             </View>
             <Text>{result}</Text>
