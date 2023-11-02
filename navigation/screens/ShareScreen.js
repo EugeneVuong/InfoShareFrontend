@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, StyleSheet} from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 export default function ShareScreen({navigation}) {
     return (
